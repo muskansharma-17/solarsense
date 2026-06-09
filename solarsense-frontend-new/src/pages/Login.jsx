@@ -30,14 +30,14 @@ function Login() {
       title: "Login to SolarSense",
       subtitle: "Choose your role and sign in to continue",
       button: "Login →",
-      api: "https://tumhara-backend.onrender.com/login",
+      api: "https://solarsense-production.up.railway.app/login",
       redirect: "/dashboard",
     },
     vendor: {
       title: "Vendor Login",
       subtitle: "Access your vendor dashboard and manage leads",
       button: "Login as Vendor →",
-      api: "https://tumhara-backend.onrender.com/vendor/login",
+      api: "https://solarsense-production.up.railway.app/vendor/login",
       redirect: "/vendor-list",
     },
     admin: {
