@@ -65,7 +65,7 @@ function VendorRegister() {
     };
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/register-vendor", {
+      const response = await fetch("https://solarsense-production.up.railway.app/register-vendor", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

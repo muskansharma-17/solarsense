@@ -44,7 +44,7 @@ function Login() {
       title: "Admin Login",
       subtitle: "Manage vendors, users and platform activities",
       button: "Login as Admin →",
-      api: "http://127.0.0.1:8000/admin/login",
+      api: "https://solarsense-production.up.railway.app/admin/login",
       redirect: "/admin-dashboard",
     },
   };

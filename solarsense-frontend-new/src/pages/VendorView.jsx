@@ -52,7 +52,7 @@ function VendorView() {
   const loadAllVendors = async () => {
     try {
       setLoading(true);
-      const res = await fetch("http://127.0.0.1:8000/vendors");
+      const res = await fetch("https://solarsense-production.up.railway.app/vendors");
       const data = await res.json();
       setVendors(normalizeVendors(data));
     } catch (error) {
@@ -77,7 +77,7 @@ function VendorView() {
       });
 
       const res = await fetch(
-        `http://127.0.0.1:8000/vendors/filter?${params.toString()}`
+        `https://solarsense-production.up.railway.app/vendors/filter?${params.toString()}`
       );
 
       const data = await res.json();

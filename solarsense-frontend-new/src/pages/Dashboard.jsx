@@ -13,7 +13,7 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://solarsense-production.up.railway.app";
 
 function ChangeMapView({ lat, lng }) {
   const map = useMap();

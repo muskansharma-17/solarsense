@@ -40,7 +40,7 @@ import {
 
 import "./ResultDashboard.css";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://solarsense-production.up.railway.app";
 
 function ResultDashboard() {
   const navigate = useNavigate();
