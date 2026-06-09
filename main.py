@@ -944,42 +944,9 @@ def get_inquiries():
 
     return inquiries
 
-# =========================
-# 9. Solar Chat API
-# =========================
-
-@app.post("/solar-chat")
-def solar_chat(data: SolarChatRequest):
-
-    try:
-
-        prompt = f"""
-        You are SolarSense AI Assistant.
-
-        Answer only solar energy related questions.
-        Explain in Hindi, English or Hinglish.
-
-        User Question:
-        {data.question}
-        """
-
-        response = client.models.generate_content(
-            model="gemini-2.0-flash",
-            contents=prompt
-        )
-
-        return {
-            "answer": response.text
-        }
-
-    except Exception as e:
-
-        return {
-            "error": str(e)
-        }
 
 # =========================
-# 10. MONTHLY SOLAR PRODUCTION CHART API
+# 9. MONTHLY SOLAR PRODUCTION CHART API
 # =========================
 
 @app.get("/generation-chart")
@@ -1091,7 +1058,7 @@ def bill_chart(monthly_bill: float, solar_capacity_kw: float):
     }
 
 # =========================
-# 11. Proposal API
+# 10. Proposal API
 # =========================
 
 @app.post("/save-proposal")
