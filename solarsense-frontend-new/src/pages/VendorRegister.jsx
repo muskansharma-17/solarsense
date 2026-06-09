@@ -64,7 +64,7 @@ function VendorRegister() {
       warranty_years: formData.warranty_years ? parseInt(formData.warranty_years) : 0,
     };
 
-        try {
+    try {
       const response = await fetch("http://127.0.0.1:8000/register-vendor", {
         method: "POST",
         headers: {
@@ -93,14 +93,14 @@ function VendorRegister() {
       console.log("Registration Error:", error);
       alert("Something went wrong");
     }
-    
+
   };
 
   return (
     <div className="vendor-page">
       <div className="vendor-left">
         <div className="logo">
-          <img src="/src/assets/logo.png" alt="logo" />
+          <img src="/assets/logo.png" alt="logo" />
           <h2>
             Solar<span>Sense</span>
           </h2>

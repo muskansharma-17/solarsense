@@ -122,7 +122,7 @@ function ProposalViewer() {
             </div>
 
             <div className="hero-image">
-              <img src="/src/assets/solar-big.png" alt="Solar House" />
+              <img src="/assets/solar-big.png" alt="Solar House" />
             </div>
           </div>
 
@@ -131,9 +131,9 @@ function ProposalViewer() {
           <div className="highlight-grid">
 
             <Card
-             icon={<Zap size={23} />}
-             title="System Size DC"
-             value={`${data.system_size_dc} kWp`}
+              icon={<Zap size={23} />}
+              title="System Size DC"
+              value={`${data.system_size_dc} kWp`}
             />
             <Card
               icon={<Zap size={23} />}
@@ -150,7 +150,7 @@ function ProposalViewer() {
               title="Payback Period"
               value={`${data.payback_period} Years`}
             />
-            
+
           </div>
 
           <div className="green-footer-banner">
@@ -188,7 +188,7 @@ function ProposalViewer() {
 
           <img
             className="bottom-illustration"
-            src="/src/assets/solarevs.png"
+            src="/assets/solarevs.png"
             alt="Solar Village"
           />
 
@@ -220,7 +220,7 @@ function ProposalViewer() {
 
             <img
               className="side-img"
-              src="/src/assets/rooftop.png"
+              src="/assets/rooftop.png"
               alt="Solar Rooftop"
             />
           </div>
@@ -405,7 +405,7 @@ function ProposalViewer() {
 
           <img
             className="bottom-illustration env-img"
-            src="/src/assets/solarevs.png"
+            src="/assets/solarevs.png"
             alt="Environment"
           />
 
@@ -454,7 +454,7 @@ function Header({ data }) {
   return (
     <div className="page-header">
       <div className="logo-wrap">
-        <img src="/src/assets/logo.png" alt="SolarSense" />
+        <img src="/assets/logo.png" alt="SolarSense" />
         <div className="logo">
           Solar<span>Sense</span>
         </div>

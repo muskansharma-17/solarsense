@@ -45,7 +45,7 @@ function SignUp() {
         alert("Signup Successful");
         navigate("/login");
       }
-    } catch(error){
+    } catch (error) {
       console.log("FULL ERROR:", error);
       alert(error.message);
     }
@@ -55,7 +55,7 @@ function SignUp() {
     <div className="signup-page">
       <div className="signup-left">
         <div className="logo">
-          <img src="/src/assets/logo.png" alt="logo" />
+          <img src="/assets/logo.png" alt="logo" />
           <h2>Solar<span>Sense</span></h2>
         </div>
 

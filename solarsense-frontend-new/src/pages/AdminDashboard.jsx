@@ -169,7 +169,7 @@ function AdminDashboard() {
     <div className="admin-page">
       <aside className="admin-sidebar">
         <div className="admin-logo">
-          <img src="/src/assets/logo.png" alt="logo" />
+          <img src="/assets/logo.png" alt="logo" />
           <div>
             <h2>
               Solar<span>Sense</span>
@@ -213,7 +213,7 @@ function AdminDashboard() {
         </div>
 
         <div className="admin-side-image">
-          <img src="/src/assets/solar house.png" alt="Admin Dashboard" />
+          <img src="/assets/solar house.png" alt="Admin Dashboard" />
         </div>
 
         <div className="admin-side-card">

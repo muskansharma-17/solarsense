@@ -81,7 +81,7 @@ function ResultDashboard() {
 
         const billRes = await fetch(`${API_BASE}/calculate-solar-from-bill?user_id=${userId}`);
 
-        
+
         const billData = await billRes.json();
 
         if (!billData.success) {
@@ -92,8 +92,8 @@ function ResultDashboard() {
 
         const solarKw = cleanNumber(
           billData.recommended_solar_capacity ||
-            billData.recommended_solar_kw ||
-            billData.recommended_kw
+          billData.recommended_solar_kw ||
+          billData.recommended_kw
         );
 
         const monthlySaving = cleanNumber(billData.monthly_saving);
@@ -110,9 +110,9 @@ function ResultDashboard() {
 
         const monthlyGeneration = Array.isArray(genData.chart_data)
           ? genData.chart_data.map((item) => ({
-              month: shortMonth(item.month),
-              value: cleanNumber(item.monthly_generation),
-            }))
+            month: shortMonth(item.month),
+            value: cleanNumber(item.monthly_generation),
+          }))
           : [];
 
         const yearlyProduction =
@@ -367,7 +367,7 @@ function ResultDashboard() {
       <aside className="sidebar">
         <div className="brand-logo">
           <img
-            src="/src/assets/logo.png"
+            src="/assets/logo.png"
             alt="SolarSense"
             className="logo-brand-img"
             onError={(e) => {
@@ -455,11 +455,11 @@ function ResultDashboard() {
               <div className="user-left">
                 <span>👤</span>
                 <span>Hi, {userName}</span>
-             </div>
+              </div>
 
-              <button className="logout-btn" onClick={() => {  
+              <button className="logout-btn" onClick={() => {
                 localStorage.clear(); navigate("/login");
-               }}>
+              }}>
                 Logout
                 <LogOut size={15} />
               </button>
@@ -601,7 +601,7 @@ function ResultDashboard() {
                 <div className="card-panel site-panel">
                   <div className="site-img-box">
                     <img
-                      src="/src/assets/rooftop.png"
+                      src="/assets/rooftop.png"
                       alt="Solar rooftop"
                       onError={(e) => {
                         e.target.src =

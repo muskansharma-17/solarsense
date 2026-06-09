@@ -76,12 +76,12 @@ function Login() {
         localStorage.setItem("user_id", data.user_id);
         localStorage.setItem(
           "user",
-        JSON.stringify({
-          id: data.user_id,
-          name: data.name || data.vendor_name || "User",
-          email: data.email,
-       })
-     );
+          JSON.stringify({
+            id: data.user_id,
+            name: data.name || data.vendor_name || "User",
+            email: data.email,
+          })
+        );
 
         alert("Login Successful");
 
@@ -107,7 +107,7 @@ function Login() {
     <div className="login-page">
       <div className="login-left">
         <div className="logo">
-          <img src="/src/assets/logo.png" alt="logo" />
+          <img src="/assets/logo.png" alt="logo" />
           <h2>
             Solar<span>Sense</span>
           </h2>

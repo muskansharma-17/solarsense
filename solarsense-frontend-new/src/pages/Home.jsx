@@ -32,9 +32,9 @@ function Home() {
     <div className="home-page">
       <nav className="navbar">
         <div className="brand" onClick={() => scrollToSection("home")}>
-           <img src="/src/assets/logo.png" alt="SolarSense" className="brand-logo" />
+          <img src="/assets/logo.png" alt="SolarSense" className="brand-logo" />
           <span className="brand-text">
-           Solar<span>Sense</span>
+            Solar<span>Sense</span>
           </span>
         </div>
 
@@ -83,7 +83,7 @@ function Home() {
         </div>
 
         <div className="hero-right">
-          <img src="/src/assets/solar house.png" alt="Solar home" />
+          <img src="/assets/solar house.png" alt="Solar home" />
 
           <div className="metric card-a">
             <IndianRupee size={18} />
@@ -132,7 +132,7 @@ function Home() {
       </section>
 
       <section className="vendor-card hover-pop" onClick={() => navigate("/vendor-register")}>
-        <img src="/src/assets/vendor.png" alt="Solar vendor" />
+        <img src="/assets/vendor.png" alt="Solar vendor" />
         <div>
           <h2><Store size={22} /> Are You a Solar Vendor?</h2>
           <p>Register your company on SolarSense and get quality solar leads from your service area.</p>

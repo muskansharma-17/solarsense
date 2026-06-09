@@ -7,11 +7,6 @@ uploads/
 node_modules/
 dist/
 
-*.pdf
-*.png
-*.jpg
-*.jpeg
-
 *.db
 *.sqlite3
 

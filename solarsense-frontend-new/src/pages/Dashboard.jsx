@@ -172,7 +172,7 @@ function SolarDashboard() {
     <div className="sd-page">
       <header className="sd-topbar">
         <div className="sd-logo">
-          <img src="/src/assets/logo.png" alt="SolarSense" />
+          <img src="/assets/logo.png" alt="SolarSense" />
           <h2>
             Solar<span>Sense</span>
           </h2>
@@ -189,7 +189,7 @@ function SolarDashboard() {
       <main className="sd-main">
         <aside className="sd-left">
           <div className="sd-house-card">
-            <img src="/src/assets/solar house 2.png" alt="Solar House" />
+            <img src="/assets/solar house 2.png" alt="Solar House" />
 
             <div className="sd-house-text">
               <h1>Calculate Your Solar Savings</h1>
