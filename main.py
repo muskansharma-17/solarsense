@@ -33,14 +33,13 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        "https://solarsense-plum.vercel.app",
         "http://localhost:5173",
-        "https://solarsense-plum.vercel.app"
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 def get_db():
 
