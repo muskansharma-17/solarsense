@@ -1,0 +1,25 @@
+[33m1eb3ad4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Fix proposal PDF download
+[33m2efa743[m Update proposal PDF CSS
+[33m93b37d9[m Fix proposal PDF cover page layout
+[33mb9188a6[m fix docker port and tesseract setup
+[33m572fb44[m fix docker port
+[33mea227b3[m add dockerfile for tesseract
+[33m4fc38f1[m use apt packages for tesseract
+[33mb8b242f[m add aptfile for tesseract
+[33m68fcedd[m install tesseract5 on railway
+[33m1ba8a09[m fix railway tesseract
+[33mf5435ac[m add tesseract for railway
+[33md109575[m fix production cors
+[33ma031ba6[m fix cors upload bills
+[33m4afbd91[m fix login backend url
+[33m9b9d811[m fix vercel cors url
+[33m5832c0a[m connect frontend with railway backend
+[33m9f94fdf[m fix requirements
+[33mbcdf1de[m remove gemini
+[33m7ce373b[m disable gemini
+[33m07b2b3a[m fix railway mysql url
+[33m43c6f40[m use environment database url
+[33m5a496db[m add requirements
+[33m32e10a5[m fix image paths for vercel
+[33m22f1e13[m Add gitignore
+[33m4d7463c[m Initial SolarSense project

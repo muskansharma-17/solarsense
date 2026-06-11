@@ -54,43 +54,26 @@ function ProposalViewer() {
       maximumFractionDigits: 0,
     }).format(Number(val) || 0);
 
-
   const downloadPDF = async () => {
-  const pdf = new jsPDF("p", "mm", "a4");
-  const pages = proposalRef.current.querySelectorAll(".a4-page");
+    const pdf = new jsPDF("p", "mm", "a4");
+    const pages = proposalRef.current.querySelectorAll(".a4-page");
 
-  for (let i = 0; i < pages.length; i++) {
-    const canvas = await html2canvas(pages[i], {
-      scale: 3,
-      useCORS: true,
-      allowTaint: true,
-      backgroundColor: "#ffffff",
-      logging: false,
-      foreignObjectRendering: true,
-      scrollX: 0,
-      scrollY: -window.scrollY,
-    });
+    for (let i = 0; i < pages.length; i++) {
+      const canvas = await html2canvas(pages[i], {
+        scale: 2,
+        useCORS: true,
+        backgroundColor: "#ffffff",
+      });
 
-    const imgData = canvas.toDataURL("image/jpeg", 1.0);
+      const imgData = canvas.toDataURL("image/png");
 
-    if (i > 0) pdf.addPage();
+      if (i > 0) pdf.addPage();
+      pdf.addImage(imgData, "PNG", 0, 0, 210, 297);
+    }
 
-    pdf.addImage(
-      imgData,
-      "JPEG",
-      0,
-      0,
-      210,
-      297,
-      undefined,
-      "FAST"
-    );
-  }
+    pdf.save("SolarSense_Proposal.pdf");
+  };
 
-  pdf.save("SolarSense_Proposal.pdf");
-};
-
- 
   if (loading) return <h2 className="proposal-msg">Loading Proposal...</h2>;
   if (!data) return <h2 className="proposal-msg">No proposal data found</h2>;
 
