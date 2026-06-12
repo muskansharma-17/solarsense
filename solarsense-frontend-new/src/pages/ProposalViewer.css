@@ -767,3 +767,24 @@ body{
     transform:none !important;
   }
 }
+
+/* PAGE 6 ENV IMAGE OVERLAP FIX */
+.a4-page:nth-child(6) .bottom-illustration.env-img{
+  position: static !important;
+  width: 100% !important;
+  height: 170px !important;
+  max-height: 170px !important;
+  margin: 8px 0 10px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.a4-page:nth-child(6) .next-box,
+.a4-page:nth-child(6) .support-box{
+  position: static !important;
+}
+
+.a4-page:nth-child(6) .green-footer-banner.last{
+  position: static !important;
+  margin-top: 8px !important;
+}
