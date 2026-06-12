@@ -155,7 +155,6 @@ function ResultDashboard() {
           },
 
           siteAnalysis: {
-            totalRoofArea: Math.ceil(solarKw * 3 * 20),
             usableRoofArea: Math.ceil(solarKw * 3 * 20 * 0.8),
             recommendedArea: Math.ceil(solarKw * 3 * 20 * 0.75),
             roofType: "RCC Roof",
@@ -615,10 +614,6 @@ function ResultDashboard() {
 
                   <div className="site-data">
                     <div className="site-stats-grid">
-                      <div>
-                        <span>Total Roof Area</span>
-                        <h3>{data.siteAnalysis.totalRoofArea} sq.ft</h3>
-                      </div>
                       <div>
                         <span>Usable Roof Area</span>
                         <h3>{data.siteAnalysis.usableRoofArea} sq.ft</h3>
